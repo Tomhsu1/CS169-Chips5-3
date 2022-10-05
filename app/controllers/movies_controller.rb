@@ -8,29 +8,48 @@ class MoviesController < ApplicationController
   
     def index
       @all_ratings = Movie.all_ratings
-      if params[:ratings].nil?
-        @ratings_to_show = @all_ratings
-      else
+      @ratings_to_show = @all_ratings
+      if not params[:ratings].nil?
         @ratings_to_show = params[:ratings].keys
+      elsif not session[:ratings_to_show].nil?
+        @ratings_to_show = session[:ratings_to_show]
       end
       
       @movie_title_header_color = ''
       @release_date_header_color = ''
-      @movie_title_header = params[:movie_title_header]
-      @release_date_header = params[:release_date_header]
-      @new_ratings = params[:new_ratings]
+      @movie_title_header = nil
+      @release_date_header = nil
+
+      if not params[:movie_title_header].nil?
+        @movie_title_header = params[:movie_title_header]
+      elsif not params[:release_date_header].nil?
+        @release_date_header = params[:release_date_header]
+      elsif not session[:movie_title_header].nil?
+        @movie_title_header = session[:movie_title_header]
+      elsif not session[:release_date_header].nil?
+        @release_date_header = session[:release_date_header]
+      else
+        session.clear
+      end
+
       if @movie_title_header == "1"
         @movie_title_header_color = 'hilite bg-warning'
         @release_date_header_color = ''
-        @ratings_to_show = @new_ratings
-        @movies = Movie.with_ratings(@new_ratings).order("title")
+        @movies = Movie.with_ratings(@ratings_to_show).order("title")
+        session.clear
+        session[:movie_title_header] = "1"
+        session[:ratings_to_show] = @ratings_to_show
       elsif @release_date_header == "1"
         @release_date_header_color = 'hilite bg-warning'
         @movie_title_header_color = ''
-        @ratings_to_show = @new_ratings
-        @movies = Movie.with_ratings(@new_ratings).order("release_date")
+        @movies = Movie.with_ratings(@ratings_to_show).order("release_date")
+        session.clear
+        session[:release_date_header] = "1"
+        session[:ratings_to_show] = @ratings_to_show
       else
         @movies = Movie.with_ratings(@ratings_to_show)
+        session.clear
+        session[:ratings_to_show] = @ratings_to_show
       end
     end
   
