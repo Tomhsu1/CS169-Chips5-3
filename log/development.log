@@ -2556,3 +2556,442 @@ Processing by MoviesController#index as HTML
   Rendered movies/index.html.erb within layouts/application (3.8ms)
   Rendered layouts/_flash.erb (0.1ms)
 Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?movie_title_header=1&release_date_header=0" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:30:14 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "release_date_header"=>"0"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title[0m
+  Rendered movies/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:30:17 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&release_date_header=0" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:30:19 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "release_date_header"=>"0"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title[0m
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&release_date_header=0" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:30:28 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "release_date_header"=>"0"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:30:30 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&release_date_header=0" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:30:31 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "release_date_header"=>"0"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&commit=Refresh" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:30:37 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" = 'G'[0m
+  Rendered movies/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&release_date_header=0" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:30:38 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "release_date_header"=>"0"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&release_date_header=0" for 2601:644:401:55c0:c07c:2e2c:166b:b24e at 2022-10-05 01:36:07 +0000
+Cannot render console from 2601:644:401:55c0:c07c:2e2c:166b:b24e! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "release_date_header"=>"0"}
+  Rendered movies/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/codio/workspace/CS169-Chips5-3/app/views/movies/index.html.erb:18: syntax error, unexpected ':', expecting =>
+...s_to_show, movie_title_header]: 1}) );@output_buffer.safe_ap...
+...                              ^
+/home/codio/workspace/CS169-Chips5-3/app/views/movies/index.html.erb:20: syntax error, unexpected ':', expecting =>
+..._to_show, release_date_header]: 1}) );@output_buffer.safe_ap...
+...                              ^
+/home/codio/workspace/CS169-Chips5-3/app/views/movies/index.html.erb:44: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/codio/workspace/CS169-Chips5-3/app/views/movies/index.html.erb:46: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  app/views/movies/index.html.erb:18: syntax error, unexpected ':', expecting =>
+  app/views/movies/index.html.erb:20: syntax error, unexpected ':', expecting =>
+  app/views/movies/index.html.erb:44: syntax error, unexpected ensure, expecting ')'
+  app/views/movies/index.html.erb:46: syntax error, unexpected end, expecting ')'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.5ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.9ms)
+
+
+Started GET "/movies?movie_title_header=1&release_date_header=0" for 2601:644:401:55c0:c07c:2e2c:166b:b24e at 2022-10-05 01:36:47 +0000
+Cannot render console from 2601:644:401:55c0:c07c:2e2c:166b:b24e! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "release_date_header"=>"0"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title[0m
+  Rendered movies/index.html.erb within layouts/application (47.8ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `movie_title_header' for #<#<Class:0x000055c667603c30>:0x00007fe060c98bf8>
+Did you mean?  @movie_title_header):
+    15: <table class="table table-striped col-md-12" id="movies">
+    16:   <thead>
+    17:     <tr>
+    18:       <th class="<%= @movie_title_header_color %>"><a id="title_header"><%= link_to "Movie Title", movies_path({[@ratings_to_show, movie_title_header] => 1}) %></a></th>
+    19:       <th>Rating</th>
+    20:       <th class="<%= @release_date_header_color %>"><a id="release_date_header"><%= link_to "Release Date", movies_path({[@ratings_to_show, release_date_header] => 1}) %></a</th>
+    21:       <th>More Info</th>
+  app/views/movies/index.html.erb:18:in `_app_views_movies_index_html_erb___2043832082498524375_70300836622240'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.0ms)
+
+
+Started GET "/movies?movie_title_header=1&release_date_header=0" for 2601:644:401:55c0:c07c:2e2c:166b:b24e at 2022-10-05 01:37:13 +0000
+Cannot render console from 2601:644:401:55c0:c07c:2e2c:166b:b24e! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "release_date_header"=>"0"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?G%2FPG%2FPG-13%2FR%2F1=1" for 2601:644:401:55c0:c07c:2e2c:166b:b24e at 2022-10-05 01:37:15 +0000
+Cannot render console from 2601:644:401:55c0:c07c:2e2c:166b:b24e! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G/PG/PG-13/R/1"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?G%2FPG%2FPG-13%2FR%2F=1" for 2601:644:401:55c0:c07c:2e2c:166b:b24e at 2022-10-05 01:37:18 +0000
+Cannot render console from 2601:644:401:55c0:c07c:2e2c:166b:b24e! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G/PG/PG-13/R/"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?G%2FPG%2FPG-13%2FR%2F=1" for 2601:644:401:55c0:c07c:2e2c:166b:b24e at 2022-10-05 01:37:21 +0000
+Cannot render console from 2601:644:401:55c0:c07c:2e2c:166b:b24e! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G/PG/PG-13/R/"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?G%2FPG%2FPG-13%2FR%2F=1" for 2601:644:401:55c0:c07c:2e2c:166b:b24e at 2022-10-05 01:37:24 +0000
+Cannot render console from 2601:644:401:55c0:c07c:2e2c:166b:b24e! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G/PG/PG-13/R/"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?G%2FPG%2FPG-13%2FR%2F=1" for 2601:644:401:55c0:c07c:2e2c:166b:b24e at 2022-10-05 01:37:28 +0000
+Cannot render console from 2601:644:401:55c0:c07c:2e2c:166b:b24e! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G/PG/PG-13/R/"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?G%2FPG%2FPG-13%2FR%2F=1" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:40:55 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G/PG/PG-13/R/"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (43.4ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined local variable or method `new_ratings' for #<#<Class:0x00007fe0621d9238>:0x000055c666ed0f80>
+Did you mean?  @new_ratings):
+    15: <table class="table table-striped col-md-12" id="movies">
+    16:   <thead>
+    17:     <tr>
+    18:       <th class="<%= @movie_title_header_color %>"><a id="title_header"><%= link_to "Movie Title", movies_path({new_ratings => @ratings_to_show, @movie_title_header => 1}) %></a></th>
+    19:       <th>Rating</th>
+    20:       <th class="<%= @release_date_header_color %>"><a id="release_date_header"><%= link_to "Release Date", movies_path({new_ratings => @ratings_to_show, @release_date_header => 1}) %></a</th>
+    21:       <th>More Info</th>
+  app/views/movies/index.html.erb:18:in `_app_views_movies_index_html_erb___2043832082498524375_47155309943920'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.4ms)
+
+
+Started GET "/movies?G%2FPG%2FPG-13%2FR%2F=1" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:41:22 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G/PG/PG-13/R/"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (32.6ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `ratings_to_show' for #<#<Class:0x00007fe0621d9238>:0x00007fe061349a88>
+Did you mean?  @ratings_to_show):
+    15: <table class="table table-striped col-md-12" id="movies">
+    16:   <thead>
+    17:     <tr>
+    18:       <th class="<%= @movie_title_header_color %>"><a id="title_header"><%= link_to "Movie Title", movies_path({new_ratings: ratings_to_show, movie_title_header: 1}) %></a></th>
+    19:       <th>Rating</th>
+    20:       <th class="<%= @release_date_header_color %>"><a id="release_date_header"><%= link_to "Release Date", movies_path({new_ratings: @ratings_to_show, release_date_header: 1}) %></a</th>
+    21:       <th>More Info</th>
+  app/views/movies/index.html.erb:18:in `_app_views_movies_index_html_erb___2043832082498524375_70300840137480'
+
+
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/codio/.rvm/gems/ruby-2.6.6/gems/actionpack-4.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.3ms)
+
+
+Started GET "/movies?G%2FPG%2FPG-13%2FR%2F=1" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:41:34 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"G/PG/PG-13/R/"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&new_ratings%5B%5D=G&new_ratings%5B%5D=PG&new_ratings%5B%5D=PG-13&new_ratings%5B%5D=R" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:41:35 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "new_ratings"=>["G", "PG", "PG-13", "R"]}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title[0m
+  Rendered movies/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:41:42 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&new_ratings%5B%5D=G&new_ratings%5B%5D=PG-13&new_ratings%5B%5D=R" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:41:46 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "new_ratings"=>["G", "PG-13", "R"]}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')  ORDER BY title[0m
+  Rendered movies/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:41:50 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&new_ratings%5B%5D=G&new_ratings%5B%5D=PG-13&new_ratings%5B%5D=R" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:41:56 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "new_ratings"=>["G", "PG-13", "R"]}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')  ORDER BY title[0m
+  Rendered movies/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:42:07 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:42:16 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&new_ratings%5B%5D=G&new_ratings%5B%5D=R" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:42:18 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "new_ratings"=>["G", "R"]}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&new_ratings%5B%5D=G&new_ratings%5B%5D=R" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:43:07 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "new_ratings"=>["G", "R"]}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'R')  ORDER BY title[0m
+  Rendered movies/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:43:10 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'R')
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?new_ratings%5B%5D=G&new_ratings%5B%5D=R&release_date_header=1" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:43:13 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"new_ratings"=>["G", "R"], "release_date_header"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'R')  ORDER BY release_date[0m
+  Rendered movies/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?movie_title_header=1&new_ratings%5B%5D=G&new_ratings%5B%5D=R" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:43:18 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "new_ratings"=>["G", "R"]}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:43:20 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')[0m
+  Rendered movies/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?movie_title_header=1&new_ratings%5B%5D=G&new_ratings%5B%5D=PG&new_ratings%5B%5D=R" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:43:23 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "new_ratings"=>["G", "PG", "R"]}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')  ORDER BY title
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?new_ratings%5B%5D=G&new_ratings%5B%5D=PG&new_ratings%5B%5D=R&release_date_header=1" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:43:26 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"new_ratings"=>["G", "PG", "R"], "release_date_header"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')  ORDER BY release_date[0m
+  Rendered movies/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:43:28 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?movie_title_header=1&new_ratings%5B%5D=G&new_ratings%5B%5D=PG&new_ratings%5B%5D=PG-13&new_ratings%5B%5D=R" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:43:30 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"movie_title_header"=>"1", "new_ratings"=>["G", "PG", "PG-13", "R"]}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY title[0m
+  Rendered movies/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?new_ratings%5B%5D=G&new_ratings%5B%5D=PG&new_ratings%5B%5D=PG-13&new_ratings%5B%5D=R&release_date_header=1" for 2601:644:401:55c0:3951:e395:5289:7da1 at 2022-10-05 01:43:31 +0000
+Cannot render console from 2601:644:401:55c0:3951:e395:5289:7da1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MoviesController#index as HTML
+  Parameters: {"new_ratings"=>["G", "PG", "PG-13", "R"], "release_date_header"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')  ORDER BY release_date
+  Rendered movies/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms)

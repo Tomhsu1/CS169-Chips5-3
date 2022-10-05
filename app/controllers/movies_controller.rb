@@ -18,17 +18,18 @@ class MoviesController < ApplicationController
       @release_date_header_color = ''
       @movie_title_header = params[:movie_title_header]
       @release_date_header = params[:release_date_header]
-
+      @new_ratings = params[:new_ratings]
       if @movie_title_header == "1"
         @movie_title_header_color = 'hilite bg-warning'
         @release_date_header_color = ''
-        @movies = Movie.sort_by_title
+        @ratings_to_show = @new_ratings
+        @movies = Movie.with_ratings(@new_ratings).order("title")
       elsif @release_date_header == "1"
         @release_date_header_color = 'hilite bg-warning'
         @movie_title_header_color = ''
-        @movies = Movie.sort_by_release_date
+        @ratings_to_show = @new_ratings
+        @movies = Movie.with_ratings(@new_ratings).order("release_date")
       else
-        flash[:notice] = "sorting by ratings"
         @movies = Movie.with_ratings(@ratings_to_show)
       end
     end
