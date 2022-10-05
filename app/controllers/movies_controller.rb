@@ -14,6 +14,7 @@ class MoviesController < ApplicationController
       elsif not session[:ratings_to_show].nil?
         @ratings_to_show = session[:ratings_to_show]
         params[:ratings_to_show] = @ratings_to_show
+        movies_path({ratings_to_show: @ratings_to_show})
       end
       
       @movie_title_header_color = ''
@@ -28,9 +29,11 @@ class MoviesController < ApplicationController
       elsif not session[:movie_title_header].nil?
         @movie_title_header = session[:movie_title_header]
         params[:movie_title_header] = @movie_title_header
+        movies_path({movie_title_header: @movie_title_header})
       elsif not session[:release_date_header].nil?
         @release_date_header = session[:release_date_header]
         params[:release_date_header] = @release_date_header
+        movies_path({release_date_header: @release_date_header})
       else
         session.clear
       end
