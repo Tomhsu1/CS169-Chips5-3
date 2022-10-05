@@ -13,12 +13,13 @@ class MoviesController < ApplicationController
         @ratings_to_show = params[:ratings].keys
       elsif not session[:ratings_to_show].nil?
         @ratings_to_show = session[:ratings_to_show]
+        params[:ratings_to_show] = @ratings_to_show
       end
       
       @movie_title_header_color = ''
       @release_date_header_color = ''
-      @movie_title_header = nil
-      @release_date_header = nil
+      @movie_title_header = ''
+      @release_date_header = ''
 
       if not params[:movie_title_header].nil?
         @movie_title_header = params[:movie_title_header]
@@ -26,8 +27,10 @@ class MoviesController < ApplicationController
         @release_date_header = params[:release_date_header]
       elsif not session[:movie_title_header].nil?
         @movie_title_header = session[:movie_title_header]
+        params[:movie_title_header] = @movie_title_header
       elsif not session[:release_date_header].nil?
         @release_date_header = session[:release_date_header]
+        params[:release_date_header] = @release_date_header
       else
         session.clear
       end
