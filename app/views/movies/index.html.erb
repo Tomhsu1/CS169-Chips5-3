@@ -15,9 +15,9 @@
 <table class="table table-striped col-md-12" id="movies">
   <thead>
     <tr>
-      <th>Movie Title</th>
+      <th class="<%= @movie_title_header_color %>"><a id="title_header"><%= link_to "Movie Title", movies_path({movie_title_header: 1, release_date_header: 0}) %></a></th>
       <th>Rating</th>
-      <th>Release Date</th>
+      <th class="<%= @release_date_header_color %>"><a id="release_date_header"><%= link_to "Release Date", movies_path({movie_title_header: 0, release_date_header: 1}) %></a</th>
       <th>More Info</th>
     </tr>
   </thead>

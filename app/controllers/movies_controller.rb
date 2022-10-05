@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+
     def show
       id = params[:id] # retrieve movie ID from URI route
       @movie = Movie.find(id) # look up movie by unique ID
@@ -12,7 +13,24 @@ class MoviesController < ApplicationController
       else
         @ratings_to_show = params[:ratings].keys
       end
-      @movies = Movie.with_ratings(@ratings_to_show)
+      
+      @movie_title_header_color = ''
+      @release_date_header_color = ''
+      @movie_title_header = params[:movie_title_header]
+      @release_date_header = params[:release_date_header]
+
+      if @movie_title_header == "1"
+        @movie_title_header_color = 'hilite bg-warning'
+        @release_date_header_color = ''
+        @movies = Movie.sort_by_title
+      elsif @release_date_header == "1"
+        @release_date_header_color = 'hilite bg-warning'
+        @movie_title_header_color = ''
+        @movies = Movie.sort_by_release_date
+      else
+        flash[:notice] = "sorting by ratings"
+        @movies = Movie.with_ratings(@ratings_to_show)
+      end
     end
   
     def new
